@@ -9,7 +9,8 @@
     "build": "eslint . && rm -rfv ./dist && mkdir dist && cp -rv ./src/config/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
     "prod": "npm run build && node src/server.js",
     "dev": "eslint . && rm -rfv ./dist && mkdir dist && cp -rv ./src/config/iKmanifestDir ./dist && webpack serve --config webpack.dev.config.js --hot",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "ikclean": "rm -fr node_modules/ package-lock.json dist/ && npm cache clean -vf && npm run ikupdate && npm run dev"
   },
   "repository": {
     "type": "git",
@@ -34,9 +35,6 @@
     "eslint-plugin-react": "^7.26.1",
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^5.4.0",
-    "image-minimizer-webpack-plugin": "^3.2.3",
-    "imagemin": "^8.0.1",
-    "imagemin-mozjpeg": "^10.0.0",
     "mini-css-extract-plugin": "^2.4.2",
     "postcss": "^8.3.9",
     "postcss-loader": "^6.2.0",

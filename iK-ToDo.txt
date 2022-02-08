@@ -1,4 +1,4 @@
-20220204 - ikth-counter-v5-webpack-rRouter-redux-sass-2022
+20220204 - ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022
 ================ MISSION
 -version05: webpack / react / react-router / redux / sass / redux devtools
 -three routes:
@@ -7,9 +7,14 @@
 	- /* error page
 -working counter with redux
 -use of SASS within my webpack template
+-use of docker
 
 ================ LEFT OFF
--
+-dockers
+	-create dockerfile
+		-Dockerfile for production
+			-iK I finally figured out how to use 'docker run -p n:n container:latest'
+
 ================ DONE
 -check for any outdated modules & update if any
 
@@ -76,9 +81,21 @@
 	-check synk result has improved
 
 ================ TODO
+-dockers
+	-create dockerfile
+		-Dockerfile for production
+		-Dockerfile.dev for development
+
+-deploy on netlify & see if it works
 
 ================ COME BACK
+- docker run -p anyPortNumber:exposePortNumber docContainer:latest
+	- docker run -p 4000:3000 ikdoc:latest
+		-iKVIP server only works with nodejs server & not webpack dev server
+	-iK write in note
+	-VIP :latest is very important in order to ensure it works otherwise most of the time it will not & you would not understand why
+		-use the EXPOSE command in the Dockerfile
 
 ================ PLAYGROUND
-
+docker build -t doc .
 

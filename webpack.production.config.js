@@ -2,7 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -17,21 +17,21 @@ module.exports = {
     minimizer: [
       `...`,
       new CssMinimizerPlugin(),
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            // Lossless optimization with custom option
-            // Feel free to experiment with options for better result for you
-            plugins: [
-              // ["gifsicle", { interlaced: true }],
-              // ["jpegtran", { progressive: false }],
-              ["mozjpeg", { quality: 5 }],
-              // ["optipng", { optimizationLevel: 5 }],
-            ],
-          },
-        },
-      }),
+      // new ImageMinimizerPlugin({
+      //   minimizer: {
+      //     implementation: ImageMinimizerPlugin.imageminMinify,
+      //     // options: {
+      //     // Lossless optimization with custom option
+      //     // Feel free to experiment with options for better result for you
+      //     // plugins: [
+      //     // ["gifsicle", { interlaced: true }],
+      //     // ["jpegtran", { progressive: false }],
+      //     // ["mozjpeg", { quality: 5 }],
+      //     // ["optipng", { optimizationLevel: 5 }],
+      //     // ],
+      //     // },
+      //   },
+      // }),
     ],
     // splitChunks: { chunks: "all" }
   },
