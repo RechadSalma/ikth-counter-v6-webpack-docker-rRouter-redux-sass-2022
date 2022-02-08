@@ -1,0 +1,10 @@
+@import "./global.scss";
+
+header {
+  border: gray 3px solid;
+
+  code {
+    @include flexCenter;
+    font-size: 1.5rem;
+  }
+}

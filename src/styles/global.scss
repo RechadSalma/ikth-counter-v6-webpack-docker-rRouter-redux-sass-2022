@@ -1,0 +1,21 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  background-color: lemonchiffon;
+}
+
+main {
+  border: 3px purple solid;
+  margin: 0 1.25rem;
+}
+
+footer {
+  border: 3px burlywood dashed;
+}
+
+img {
+  width: 100%;
+}
