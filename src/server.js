@@ -15,7 +15,11 @@ app.get("*", (req, res) => {
   });
 });
 
+const iKport = process.env.PORT || 4000;
+app.listen(iKport, () =>
+  console.log("iK server connection successfuly " + iKport)
+);
 /*create a http://localhost:3000 port*/
-app.listen(3000, () => {
-  console.log("iK Application is running on http://localhost:3000/");
-});
+// app.listen(3000, () => {
+//   console.log("iK Application is running on http://localhost:3000/");
+// });
