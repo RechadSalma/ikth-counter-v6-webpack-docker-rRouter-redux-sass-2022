@@ -4,5 +4,6 @@ WORKDIR '/iKapp'
 COPY package.json ./
 RUN echo 'iKdockers' && node -v && npm run ikupdate
 COPY . .
-CMD node -v && npm run prod
+RUN echo 'iKdockersPRODS' && npm run build
+# CMD node -v && npm run prod
 EXPOSE 3000
