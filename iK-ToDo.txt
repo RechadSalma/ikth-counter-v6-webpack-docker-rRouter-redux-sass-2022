@@ -1,6 +1,6 @@
 20220204 - ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022
 ================ MISSION
--version05: webpack / react / react-router / redux / sass / redux devtools
+-version06: webpack / react / react-router / dockers / sass with bootstrap / netlify
 -three routes:
 	- / counter page with working buttons
 	- /side whatever page to show path pages work with react router
@@ -84,17 +84,36 @@
 -dockers
 	-create dockerfile
 		-Dockerfile for production
-		-Dockerfile.dev for development
+			-build image with tag
+			-run container with port
+-deploy on Heroku
+	-sign up to Heroku
+	-deploy one Dockerfile image using the nodejs server (./src/server.js)
 
--deploy on netlify & see if it works
+-Dockerfile.dev for development
+
+-create docker compose
+	-set up nodejs server
+	-set up volume
+
+
+-use docker repository
+	-docker push your image
+
+-redeploy the docker repo version on Heroku
 
 ================ COME BACK
-- docker run -p anyPortNumber:exposePortNumber docContainer:latest
-	- docker run -p 4000:3000 ikdoc:latest
-		-iKVIP server only works with nodejs server & not webpack dev server
-	-iK write in note
-	-VIP :latest is very important in order to ensure it works otherwise most of the time it will not & you would not understand why
-		-use the EXPOSE command in the Dockerfile
+
+================ WRITE IN YOUR NOTE DOC
+-docker under best practice section create a basic steps to creating docker image using cli. Because it got a bit confusing when I came back to dockers after a long time
+
+- docker run -p anyPortNumber:exposePortNumber docContainerTagName
+	- docker run -p 4000:3000 ikdoc
+		-iKVIP localhost server (hostport server) only works with nodejs server & not webpack dev server
+	-VIP in Dockerfile EXPOSE property must be the same as the nodejs server port for it to work	
+		-eg nodejs is localhost:3000 , than so must be EXPOSE 3000
+	-insert the notes in a best practice section
+
 
 ================ PLAYGROUND
 docker build -t doc .

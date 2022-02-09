@@ -1,7 +1,8 @@
-FROM node:alpine
+# FROM node:alpine
+FROM node:17.4-alpine3.15
 WORKDIR '/iKapp'
 COPY package.json ./
-RUN echo 'iKdockers' && npm run ikupdate
+RUN echo 'iKdockers' && node -v && npm run ikupdate
 COPY . .
-CMD npm run dev
+CMD node -v && npm run prod
 EXPOSE 3000
