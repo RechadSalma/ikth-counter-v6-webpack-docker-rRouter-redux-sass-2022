@@ -10,10 +10,8 @@
 -use of docker
 
 ================ LEFT OFF
--dockers
-	-create dockerfile
-		-Dockerfile for production
-			-iK I finally figured out how to use 'docker run -p n:n container:latest'
+-deploy on Heroku
+	-not working on deployed using one docker. however I will google for example on how to deploy docker node js on heroku
 
 ================ DONE
 -check for any outdated modules & update if any
