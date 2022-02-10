@@ -15,7 +15,7 @@ app.get("*", (req, res) => {
   });
 });
 
-const iKport = process.env.PORT || 4000;
+const iKport = process.env.PORT || 3000;
 app.listen(iKport, () =>
   console.log("iK server connection successfuly " + iKport)
 );

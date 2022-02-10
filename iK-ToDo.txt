@@ -112,6 +112,9 @@
 		-eg nodejs is localhost:3000 , than so must be EXPOSE 3000
 	-insert the notes in a best practice section
 
+heroku basic usage
+	-deploying simple Dockerfile image with nodejs
+		
 
 ================ PLAYGROUND
 docker build -t doc .
