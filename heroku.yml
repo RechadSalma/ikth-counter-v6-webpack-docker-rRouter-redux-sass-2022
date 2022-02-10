@@ -3,3 +3,6 @@ build:
     web: Dockerfile
 # run:
 #   web: bundle exec puma -C config/puma.rb
+release:
+  command:
+    - echo IKRELEASE && pwd && ls -la && node src/server.js
