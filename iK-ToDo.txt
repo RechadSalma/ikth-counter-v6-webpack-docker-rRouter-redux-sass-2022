@@ -1,6 +1,6 @@
 20220204 - ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022
 ================ MISSION
--version06: webpack / react / react-router / dockers / sass with bootstrap / netlify
+-version06: webpack / react / react-router / docker / sass / Heroku
 -three routes:
 	- / counter page with working buttons
 	- /side whatever page to show path pages work with react router
@@ -10,8 +10,6 @@
 -use of docker
 
 ================ LEFT OFF
--deploy on Heroku
-	-not working on deployed using one docker. however I will google for example on how to deploy docker node js on heroku
 
 ================ DONE
 -check for any outdated modules & update if any
@@ -57,8 +55,6 @@
 	-Used image-minimizer-webpack-plugin / Imagemin / imagemin-mozjpeg plugins to compress my jpeg image of the lizard
 		-I compress image from 232kb to 11kb using only 5% quality
 
--README.md file
-
 -include netlify form submission as contact form
 	-create /form route for the contact form
 	-create form link on header
@@ -78,7 +74,6 @@
 	-test form submission is working accordingly
 	-check synk result has improved
 
-================ TODO
 -dockers
 	-create dockerfile
 		-Dockerfile for production
@@ -88,34 +83,12 @@
 	-sign up to Heroku
 	-deploy one Dockerfile image using the nodejs server (./src/server.js)
 
--Dockerfile.dev for development
+-README.md file
 
--create docker compose
-	-set up nodejs server
-	-set up volume
-
-
--use docker repository
-	-docker push your image
-
--redeploy the docker repo version on Heroku
+================ TODO
 
 ================ COME BACK
 
 ================ WRITE IN YOUR NOTE DOC
--docker under best practice section create a basic steps to creating docker image using cli. Because it got a bit confusing when I came back to dockers after a long time
-
-- docker run -p anyPortNumber:exposePortNumber docContainerTagName
-	- docker run -p 4000:3000 ikdoc
-		-iKVIP localhost server (hostport server) only works with nodejs server & not webpack dev server
-	-VIP in Dockerfile EXPOSE property must be the same as the nodejs server port for it to work	
-		-eg nodejs is localhost:3000 , than so must be EXPOSE 3000
-	-insert the notes in a best practice section
-
-heroku basic usage
-	-deploying simple Dockerfile image with nodejs
-		
 
 ================ PLAYGROUND
-docker build -t doc .
-

@@ -1,24 +1,22 @@
-# ikth-counter-v5-webpack-rRouter-redux-sass-2022
+# ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022
 
 ## Status
 
-- 20220206: _completed most of what I wanted to achieve, & am pleased in general_
-- 20220207: _Included route /form to use Netlify form submmision as contact form. All is working fine on live site & added a notification settings to send form submission to my yahoo email_
+- 20220209: _completed just creating Dockerfile & deployed it on Heroku. It was a lot more complicated than I thought. I will do Dockerfile.dev & docker compose on the next repo. However it was successful & manage to deploy it on Heroku_
+  - _I failed to deploy it just using docker image on my local computer at first. Nothing was working. I tried doing it with docker repository push & followed youtube/documentation & it finally worked_
 
 ---
 
 ## Mission
 
-- Wanted to test out: webpack / react / react-router / redux / sass / redux devtools / webpack image optimization plugins / Netlify form submission (contact form)
+- Wanted to test out: Docker & its Dockerfile to work & be deployed on Heroku. So I clone version05 & just focus on Docker & Heroku
 - Three route paths:
   - `/` = counter page with three working redux buttons
-  - `/side` = display compress imaged
+  - `/side` = whatever page
   - `/form` = contact form
   - `/*` = error page
 - working counter with redux
 - use of SASS within my webpack template
-- optimized image (jpeg),
-- deploy on Netlify using their configuration file
 
 ---
 
@@ -32,11 +30,9 @@
   - @redux-devTools/extension
   - redux-thunk
 - SASS
-- image-minimizer-webpack-plugin / Imagemin / imagemin-mozjpeg
-  - my jpeg file from 232kb to 11kb with 5% quality on production mode
-- `netlify.toml` - Netlify configuration file to redirect static routes (react-router) & basic setup
-- Netlify form submission as contact form for live site
+- Docker `Dockerfile`
+- Heroku deployed
 
   ***
 
-  ## [ikth-counter-v5-webpack-rRouter-redux-sass-2022](https://github.com/RechadSalma/ikth-counter-v5-webpack-rRouter-redux-sass-2022)
+  ## [ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022](https://github.com/RechadSalma/ikth-counter-v6-webpack-docker-rRouter-redux-sass-2022.git)
